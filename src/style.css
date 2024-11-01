@@ -1,0 +1,25 @@
+
+    /* Inline styles for demonstration. You can move these to your style.css */
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background-image: url('./assets/Debt-Collections.jpg'); /* Ensure the image path is correct */
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      padding: 100px 0; /* Increased padding for better visibility */
+    }
+    .hero h1 {
+      font-size: 3rem; /* Increase the font size for the hero heading */
+    }
+    .hero p {
+      font-size: 1.5rem; /* Increase the font size for the hero text */
+    }
+    .footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+  
