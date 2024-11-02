@@ -103,4 +103,16 @@ const initAccordion = function (currentAccordion) {
   accordionBtn.addEventListener("click", expandAccordion);
 };
 
+const expandAccordion = function () {
+  console.log("Accordion button clicked"); // Log button click
+  if (lastActiveAccordion && lastActiveAccordion !== currentAccordion) {
+    lastActiveAccordion.classList.remove("expanded");
+    console.log("Last active accordion removed"); // Log last active removal
+  }
+  currentAccordion.classList.toggle("expanded");
+  lastActiveAccordion = currentAccordion;
+  console.log("Current accordion expanded state:", currentAccordion.classList.contains("expanded"));
+};
+
+
 for (let i = 0, len = accordions.length; i < len; i++) { initAccordion(accordions[i]); }
